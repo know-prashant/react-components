@@ -1,0 +1,137 @@
+.button {
+  position: relative;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  padding: 8px 16px;
+  cursor: pointer;
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  min-width: 96px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid;
+  color: #fff;
+  transition: background 0.2s ease;
+}
+
+.large {
+  height: 40px;
+  padding: 8px 48px;
+}
+
+.outline {
+  background-color: #fff;
+  border-color: #3777d1;
+  color: #3777d1;
+}
+
+.outline:hover {
+  background-color: #3777d1;
+  border-color: #3777d1;
+  color: #fff;
+}
+
+.basic {
+  background-color: #3777d1;
+  border-color: #3777d1;
+  color: #fff;
+}
+
+.basic:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: #3777d1;
+}
+
+.link {
+  background-color: transparent;
+  color: #4c4c4c;
+  box-shadow: none;
+}
+
+.link:hover {
+  color: #40a9ff;
+  background-color: transparent;
+}
+
+.secondary {
+  background-color: #fff;
+  border-color: rgb(186, 186, 186);
+  color: #4c4c4c;
+}
+
+.secondary:hover {
+  background-color: #eee;
+  border-color: #eee;
+}
+
+.primary {
+  background-color: #2fcb53;
+  border-color: #2fcb53;
+  color: #fff;
+}
+
+.primary:hover {
+  background-color: #48dd84;
+  border-color: #48dd84;
+}
+
+.danger {
+  color: #fff;
+  background-color: rgb(214, 69, 64);
+  border-color: rgb(214, 69, 64);
+}
+
+.danger:hover {
+  background-color: rgb(208, 50, 45);
+  border-color: rgb(208, 50, 45);
+}
+
+.disabled {
+  background-color: #fff;
+  border-color: #bababa;
+  color: #bababa;
+  box-shadow: none;
+  opacity: 0.7;
+  cursor: not-allowed;
+  border: 1px solid;
+}
+
+.disabled:hover {
+  background-color: #fff;
+  color: #bababa;
+  border-color: #bababa;
+}
+
+.ripple {
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.ripple:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  transform: scale(10, 10);
+  opacity: 0;
+  transition: transform 0.5s, opacity 1s;
+}
+
+.ripple:active:after {
+  transform: scale(0, 0);
+  opacity: 0.3;
+  transition: 0s;
+}
