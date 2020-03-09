@@ -11,11 +11,8 @@ class Button extends Component {
     className: PropTypes.string,
     label: PropTypes.string,
     size: PropTypes.string,
-    width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-    height: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
     disabledClassName: PropTypes.string,
-    disabled: PropTypes.bool,
-    noShadow: PropTypes.bool
+    disabled: PropTypes.bool
   };
 
   static defaultProps = {
@@ -24,7 +21,6 @@ class Button extends Component {
     size: "",
     variant: "basic",
     disabled: false,
-    noShadow: false,
     disabledClassName: ""
   };
 
@@ -32,10 +28,7 @@ class Button extends Component {
     const { onClick, disabled } = this.props;
 
     if (disabled) return;
-    /*
-            Do something before click event is passed to business logic
-            like tracking for analytics
-        */
+
     onClick &&
       onClick({
         event
@@ -45,8 +38,15 @@ class Button extends Component {
   renderChildren = () => {
     const { label, children } = this.props;
 
-    if (label) return label;
-    else return children;
+    if (label) {
+      return label;
+    }
+
+    if (children) {
+      return children;
+    }
+
+    return "Button";
   };
 
   render() {
@@ -54,7 +54,6 @@ class Button extends Component {
       className,
       size,
       variant,
-      noShadow,
       disabled,
       disabledClassName
     } = this.props;
@@ -63,7 +62,6 @@ class Button extends Component {
       className,
       styles[size],
       styles.button,
-      { [styles.shadow]: !noShadow },
       styles[variant],
       {
         [styles.disabled]: disabled,

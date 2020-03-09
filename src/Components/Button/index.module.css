@@ -3,7 +3,7 @@
   font-size: 14px;
   font-weight: 600;
   text-align: center;
-  padding: 8px 16px;
+  padding: 0.7em 1.2em;
   cursor: pointer;
   user-select: none;
   display: inline-flex;
@@ -15,12 +15,18 @@
   background-color: #fff;
   border: 1px solid;
   color: #fff;
+  -webkit-transition: background 0.2s ease;
+  -moz-transition: background 0.2s ease;
+  -o-transition: background 0.2s ease;
   transition: background 0.2s ease;
 }
 
+.medium {
+  font-size: 16px;
+}
+
 .large {
-  height: 40px;
-  padding: 8px 48px;
+  font-size: 18px;
 }
 
 .outline {

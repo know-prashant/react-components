@@ -5,15 +5,25 @@ import Button from "./Components/Button";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
-  <>
-    <Button label="Primary" variant="primary" />
-    <Button label="Outline" variant="outline" />
+  <div className="abc">
     <Button label="Basic" variant="basic" />
+
     <Button label="Link" variant="link" />
+
     <Button label="Secondary" variant="secondary" />
+
     <Button label="Danger" variant="danger" />
+
     <Button label="Disabled" disabled={true} />
-  </>,
+
+    <Button label="Primary" variant="primary" />
+
+    <Button label="Outline" variant="outline" />
+
+    <Button label="Medium" variant="primary" size="medium" />
+
+    <Button label="Large" variant="outline" size="large" />
+  </div>,
   document.getElementById("root")
 );
 
