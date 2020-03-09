@@ -1,4 +1,4 @@
-#List of different components created in react.
+# List of different components created in react.
 
 ## This project uses create-react-app as a boilerplate and following is the listed instruction to run the app.
 
