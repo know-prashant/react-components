@@ -1,0 +1,64 @@
+.radio {
+  display: none;
+}
+
+.radio:checked + .customLabel {
+  border-color: #68c721;
+}
+
+.radio:checked + .customLabel:after {
+  content: "";
+}
+
+.customLabel {
+  border: 1px solid #a8acb1;
+  background-color: #fff;
+  border-radius: 50%;
+  min-width: 20px;
+  min-height: 20px;
+  cursor: pointer;
+}
+
+.customLabel::after {
+  width: 10px;
+  height: 10px;
+  background: #68c721;
+  border-radius: 50%;
+  display: block;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+.white .radio:checked + .customLabel {
+  background: transparent;
+  border-color: #a8acb1;
+}
+
+.white .radio:checked + .customLabel::after {
+  border-color: #2d2d2d;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.item.disabled {
+  opacity: 0.3;
+}
+
+.item.disabled .label,
+.item.disabled .customLabel {
+  cursor: default;
+}
+
+.inlineItem {
+  display: inline-flex;
+}
+
+.label {
+  cursor: pointer;
+  margin-left: 15px;
+  font-size: 14px;
+}

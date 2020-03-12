@@ -1,15 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Checkbox from "./Components/Checkbox";
+import RadioGroup from "./Components/Radiobox";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <div className="abc">
-    <Checkbox
-      label="select your item"
-      option={{ label: "Name", value: "abc", disabled: false }}
-      name="ck"
+    <RadioGroup
+      options={[
+        { label: "I am not checked", value: "xyz", disabled: false },
+        { label: "I am checked", value: "abc", disabled: false }
+      ]}
+      name="radio"
+      prefillValue="abc"
     />
   </div>,
   document.getElementById("root")
