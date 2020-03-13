@@ -5,13 +5,15 @@ import styles from "./index.module.css";
 
 const Checkbox = (props, ref) => {
   const handleChange = e => {
-    const { name, onChange } = props;
+    const { name, onChange, option } = props;
     const { checked } = e.target;
+    const { value } = option;
 
     if (onChange) {
       onChange({
         name,
-        value: checked
+        checked,
+        value
       });
     }
   };

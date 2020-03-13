@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import cx from "classnames";
 import styles from "./index.module.css";
 
-export default class RadioGroup extends Component {
+class RadioGroup extends Component {
   static propTypes = {
     options: PropTypes.arrayOf(
       PropTypes.shape({
@@ -56,17 +56,15 @@ export default class RadioGroup extends Component {
     super(props);
 
     this.state = {
-      value: props.prefillValue || `props`.value
+      value: props.prefillValue || props.value
     };
   }
 
   componentDidUpdate(previousProps) {
     const { value } = this.props;
-
+    //If value is different then only update the state
     if (previousProps.value != this.props.value) {
-      this.setState({
-        value
-      });
+      this.setState({ value });
     }
   }
 
@@ -75,14 +73,9 @@ export default class RadioGroup extends Component {
     const { value } = e.target;
 
     if (onChange) {
-      onChange({
-        name,
-        value
-      });
+      onChange({ name, value });
     } else {
-      this.setState({
-        value
-      });
+      this.setState({ value });
     }
   };
 
@@ -144,3 +137,5 @@ export default class RadioGroup extends Component {
     );
   }
 }
+
+export default RadioGroup;
