@@ -1,0 +1,40 @@
+.container {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+.label {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 4px;
+  letter-spacing: -0.05px;
+  color: #4c4c56;
+}
+
+.hasError {
+  border-color: #eb5055;
+}
+
+.hasError:focus {
+  border-color: #eb5055;
+}
+
+.helperText {
+  font-weight: 600;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  color: #adb1b3;
+  font-family: sans-serif;
+}
+
+.error {
+  color: #eb5055;
+}
