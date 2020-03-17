@@ -5,6 +5,7 @@
   "author": "Prashant Yadav",
   "description": "List of different react components",
   "dependencies": {
+    "antd": "^4.0.3",
     "classnames": "^2.2.6",
     "cra-template": "1.0.2",
     "prop-types": "^15.7.2",

@@ -1,55 +1,28 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Select from "./Components/Select";
+import ToggleSwitch from "./Components/ToggleSwitch";
 import * as serviceWorker from "./serviceWorker";
+import { CheckOutlined, CloseOutlined } from "@ant-design/icons";
 
 ReactDOM.render(
   <div className="abc">
-    <Select
+    <ToggleSwitch name="abc" rounded={true} />
+    <ToggleSwitch name="abc" variant="success" />
+    <ToggleSwitch
       name="abc"
-      options={[
-        { value: "car1", label: "Toyota" },
-        { value: "car2", label: "Honda" },
-        { value: "car3", label: "Hyundai" },
-        { value: "car4", label: "BMW" }
-      ]}
-      label="Single Selection"
+      rounded={true}
+      variant="danger"
+      defaultChecked={true}
+      checkedChildren={<CheckOutlined />}
+      uncheckedChildren={<CloseOutlined />}
     />
-    <Select
+    <ToggleSwitch
       name="abc"
-      options={[
-        { value: "car1", label: "Toyota" },
-        { value: "car2", label: "Honda" },
-        { value: "car3", label: "Hyundai" },
-        { value: "car4", label: "BMW" }
-      ]}
-      multi={true}
-      disableOptionsByValue={["car4"]}
-      label="Mutliple Selection"
-      value={[{ value: "car2", label: "Honda" }]}
-    />
-    <Select
-      name="abc"
-      options={[
-        { value: "car1", label: "Toyota" },
-        { value: "car2", label: "Honda" },
-        { value: "car3", label: "Hyundai" },
-        { value: "car4", label: "BMW" }
-      ]}
-      disabled={true}
-      label="Disabled"
-    />
-    <Select
-      name="abc"
-      options={[
-        { value: "car1", label: "Toyota" },
-        { value: "car2", label: "Honda" },
-        { value: "car3", label: "Hyundai" },
-        { value: "car4", label: "BMW" }
-      ]}
-      error={true}
-      label="Error"
+      defaultChecked={true}
+      variant="danger"
+      checkedChildren={<CheckOutlined />}
+      uncheckedChildren={<CloseOutlined />}
     />
   </div>,
   document.getElementById("root")
