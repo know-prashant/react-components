@@ -1,0 +1,43 @@
+:root {
+  --base-size: 4px;
+  --size-multiplier: 3;
+}
+
+.progress {
+  background: #eee;
+  position: relative;
+  overflow: hidden;
+  transition: width 0.3s ease-in;
+  border-radius: 25px;
+}
+
+.progress .progress_bar {
+  background: linear-gradient(45deg, #1d9241, #77de7b);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  will-change: width;
+  transition: width 0.3s;
+  border-radius: 25px;
+}
+
+.xs {
+  height: var(--base-size);
+}
+
+.sm {
+  height: calc(var(--base-size) * var(--size-multiplier));
+}
+
+.md {
+  height: calc(2 * var(--base-size) * var(--size-multiplier));
+}
+
+.lg {
+  height: calc(3 * var(--base-size) * var(--size-multiplier));
+}
+
+.xl {
+  height: calc(4 * var(--base-size) * var(--size-multiplier));
+}
