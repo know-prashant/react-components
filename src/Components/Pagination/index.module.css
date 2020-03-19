@@ -1,0 +1,26 @@
+.wrapper {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #5e6776;
+  border: 1px solid #607d8b;
+  padding: 0;
+}
+
+.wrapper > li {
+  background-color: #fff;
+  width: 20%;
+  text-align: center;
+  border-right: 1px solid #607d8b;
+  padding: 8px 14px;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.wrapper > li:last-child {
+  border: none;
+}
+
+.wrapper > li.active {
+  background-color: #e9e9eb;
+}
