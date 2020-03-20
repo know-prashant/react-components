@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import PaginationTest from "./Components/Pagination/test";
+import AccordionTest from "./Components/Accordion/test";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <div className="abc">
-    <PaginationTest />
+    <AccordionTest />
   </div>,
   document.getElementById("root")
 );

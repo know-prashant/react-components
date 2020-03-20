@@ -4,7 +4,6 @@ import styles from "./index.module.css";
 import cx from "classnames";
 
 const Pagination = props => {
-  //Get total no of pages needed
   const getTotalPages = () => {
     const { totalItems, perPage } = props;
     return Math.ceil(totalItems / perPage);

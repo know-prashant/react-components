@@ -1,0 +1,47 @@
+.toggler {
+  position: relative;
+  display: block;
+  background-color: #f9f9f9;
+  color: #444;
+  cursor: pointer;
+  padding: 8px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.toggler:after {
+  content: "\02795";
+  position: absolute;
+  right: 10px;
+  font-size: 10px;
+  top: 48%;
+  transform: translateY(-50%);
+}
+
+.toggler.active:after {
+  content: "\2796";
+}
+
+.panel {
+  transition: 0.4s;
+  background-color: #90a4ae;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  overflow: hidden;
+  max-height: 0;
+}
+
+.panel > .contentWrapper {
+  padding: 10px;
+}
+
+.wrapper {
+  padding: 5px 10px;
+}
+
+.panel.active {
+  max-height: 100vh;
+}
