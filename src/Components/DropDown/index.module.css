@@ -1,0 +1,33 @@
+.wrapper {
+  display: inline-flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.dropToggler {
+  position: relative;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #607d8b;
+  cursor: pointer;
+}
+
+.dropToggler > .arrow {
+  margin-left: 10px;
+}
+
+.displayArea {
+  position: relative;
+}
+
+.displayArea > .children {
+  position: absolute;
+  left: 1px;
+  top: 2px;
+  min-width: 200px;
+  min-height: 200px;
+  background: #bdb8b8;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px;
+}

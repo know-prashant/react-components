@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import AccordionTest from "./Components/Accordion/test";
+import DropDownTest from "./Components/DropDown/test";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <div className="abc">
-    <AccordionTest />
+    <DropDownTest />
   </div>,
   document.getElementById("root")
 );
