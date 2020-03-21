@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import DropDownTest from "./Components/DropDown/test";
+import AutoComplete from "./Components/Search";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <div className="abc">
-    <DropDownTest />
+    <AutoComplete />
   </div>,
   document.getElementById("root")
 );

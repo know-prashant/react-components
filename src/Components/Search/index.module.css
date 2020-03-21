@@ -4,8 +4,7 @@
   flex-direction: column;
 }
 
-.dropToggler {
-  position: relative;
+.searchBox {
   padding: 10px;
   border: 1px solid #000;
   border-radius: 5px;
@@ -14,20 +13,24 @@
   cursor: pointer;
 }
 
-.dropToggler > .arrow {
-  margin-left: 10px;
-}
-
 .displayArea {
   position: relative;
-}
-
-.displayArea > .children {
-  position: absolute;
   left: 1px;
   top: 8px;
-  min-width: 200px;
-  min-height: 200px;
-  background: #bdb8b8;
+  max-width: 200px;
+  min-height: 100px;
+  background: #f5f0f0;
   box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px;
+  padding: 5px;
+}
+
+.listItem {
+  padding: 5px 0;
+  display: block;
+  border-bottom: 1px solid #37474f;
+  color: #ff9800;
+}
+
+.listItem:last-child {
+  border: none;
 }
