@@ -1,0 +1,71 @@
+:root {
+  --width: 300px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.menu {
+  position: fixed;
+  width: var(--width);
+  height: 100vh;
+  left: 0;
+  top: 0;
+  transition: 0.4s;
+  background: red;
+  z-index: 9999;
+  transform: translateX(-100%);
+}
+
+.menu.active {
+  transform: translateX(0);
+}
+
+.hamburger {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  background-color: red;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.hamburger > span {
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  left: 10%;
+  top: 48%;
+  background: yellow;
+  transition: 0.4s;
+}
+
+.hamburger > span:first-child {
+  top: 18%;
+}
+
+.hamburger > span:last-child {
+  top: 78%;
+}
+
+.hamburger.active {
+  left: calc(var(--width) + 3px);
+}
+
+.hamburger.active > span {
+  transform: translateX(120%);
+}
+
+.hamburger.active > span:first-child {
+  top: 48%;
+  transform: rotateZ(-45deg);
+}
+
+.hamburger.active > span:last-child {
+  top: 48%;
+  transform: rotateZ(45deg);
+}

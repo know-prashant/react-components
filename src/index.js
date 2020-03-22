@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import AutoComplete from "./Components/Search";
+import SlidingMenuTest from "./Components/SlidingMenu/test";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <div className="abc">
-    <AutoComplete />
+    <SlidingMenuTest />
   </div>,
   document.getElementById("root")
 );
