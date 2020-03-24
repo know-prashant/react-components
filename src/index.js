@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import SlidingMenuTest from "./Components/SlidingMenu/test";
+import TabTest from "./Components/Tab/test";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <div className="abc">
-    <SlidingMenuTest />
+    <TabTest />
   </div>,
   document.getElementById("root")
 );
