@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import TabTest from "./Components/Tab/test";
+import AlertBoxText from "./Components/AlertBox/test";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <div className="abc">
-    <TabTest />
+    <AlertBoxText />
   </div>,
   document.getElementById("root")
 );

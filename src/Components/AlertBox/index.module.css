@@ -1,0 +1,41 @@
+.alertBox {
+  position: fixed;
+  width: 80%;
+  left: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  background: #eee;
+  border: 1px solid #aba3a3;
+}
+
+.bottom {
+  bottom: 5%;
+}
+
+.top {
+  top: 5%;
+}
+
+.danger {
+  background: #ff5722;
+  border: 1px solid #bf360c;
+}
+
+.primary {
+  background: #8bc34a;
+  border: 1px solid #33691e;
+}
+
+.basic {
+  background: #00bcd4;
+  border: 1px solid #006064;
+}
+
+.close {
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
