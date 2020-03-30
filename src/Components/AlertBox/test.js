@@ -6,7 +6,7 @@ class AlertBoxTest extends Component {
     isActive: true
   };
 
-  onChange = isActive => {
+  onClose = isActive => {
     this.setState({
       isActive
     });
@@ -24,7 +24,7 @@ class AlertBoxTest extends Component {
       <>
         <AlertBox
           show={isActive}
-          onChange={this.onChange}
+          onClose={this.onClose}
           message={"Primary!: AlertBox"}
           autoClose={false}
         />

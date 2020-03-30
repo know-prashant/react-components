@@ -1,0 +1,19 @@
+.wrapper {
+  width: 100px;
+  height: 200px;
+  position: relative;
+  text-align: center;
+  line-height: 200px;
+  margin: 0 auto;
+}
+
+.wrapper > span {
+  display: inline-block;
+  width: 10px;
+  height: 10%;
+  background: green;
+  border-radius: 20%;
+  transition: height 0.05s ease-in-out;
+  margin: 0 2px;
+  vertical-align: bottom;
+}

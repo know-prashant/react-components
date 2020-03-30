@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import AlertBoxText from "./Components/AlertBox/test";
+import VoiceVisualizerTest from "./Components/VoiceVisualizer/test";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <div className="abc">
-    <AlertBoxText />
+    <VoiceVisualizerTest />
   </div>,
   document.getElementById("root")
 );
