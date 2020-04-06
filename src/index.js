@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import VoiceVisualizerTest from "./Components/VoiceVisualizer/test";
+import LazyLoading from "./Components/Lazyloading";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <div className="abc">
-    <VoiceVisualizerTest />
+    <LazyLoading />
   </div>,
   document.getElementById("root")
 );

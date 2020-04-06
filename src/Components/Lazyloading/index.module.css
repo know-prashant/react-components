@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.item {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 10px;
+  margin: 10px 0;
+}
+
+.wrapper {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+  padding: 25px;
+  text-align: center;
+  background: #fbe9e7;
+}
+
+.wrapper > img {
+  display: inline-block;
+  width: 100%;
+  max-width: 18em;
+  margin: 0 auto;
+}
+
+.wrapper > span {
+  display: inline-block;
+  width: 100%;
+  margin: 5px;
+}
+
+.fullScreenLoader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.error {
+  color: red;
+  text-transform: capitalize;
+  font-size: 18px;
+}
