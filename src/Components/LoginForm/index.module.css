@@ -1,0 +1,111 @@
+.container {
+  padding: 0 32px;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f7f8fa;
+  background: linear-gradient(90deg, #ffffff 0%, #ffffff 20%, #f7f8fa 98.27%);
+}
+
+.box {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 365px;
+  max-width: 460px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px;
+  padding: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.logoWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.content > input {
+  margin-bottom: 15px;
+  box-shadow: rgba(0, 0, 0, 1) 0px 0px 0px 1px inset,
+    rgba(28, 28, 29, 1) 0px 0px 2px inset;
+}
+
+.header {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  line-height: 25px;
+  color: #1d1c22;
+  padding: 10px 0;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  text-align: right;
+  bottom: 0;
+  left: 0;
+  padding: 0 0 15px;
+  justify-content: flex-end;
+}
+
+.submitBtn {
+  height: 40px;
+}
+
+.error,
+.success {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  height: 24px;
+  font-size: 16px;
+  padding: 24px 0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.error {
+  color: #ec454d;
+}
+
+.success {
+  color: #8bc34a;
+}
+
+.forgotPassword {
+  text-align: right;
+  width: 100%;
+  color: #004bdc;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.forgotPassword > a {
+  cursor: pointer;
+  color: #8bc34a;
+}
+
+.forgotPassword > a:hover {
+  color: blue;
+}

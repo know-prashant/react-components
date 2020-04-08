@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import LazyLoading from "./Components/Lazyloading";
+import LoginForm from "./Components/LoginForm";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <div className="abc">
-    <LazyLoading />
+    <LoginForm />
   </div>,
   document.getElementById("root")
 );
