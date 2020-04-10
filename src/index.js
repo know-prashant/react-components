@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import LoginForm from "./Components/LoginForm";
+import SortableItems from "./Components/SortableItems";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <div className="abc">
-    <LoginForm />
+    <SortableItems />
   </div>,
   document.getElementById("root")
 );
