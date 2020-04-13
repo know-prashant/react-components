@@ -1,0 +1,41 @@
+.normalImage {
+  cursor: zoom-in;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.zoomedImage {
+  position: absolute;
+  z-index: 999;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.zoomOutCursor {
+  cursor: zoom-out;
+}
+
+.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.top-left {
+  top: 0;
+  left: -110%;
+}
+
+.top-right {
+  top: 0;
+  left: 110%;
+}
+
+.bottm-left {
+  bottom: 0;
+  left: -110%;
+}
+
+.bottom-right {
+  bottom: 0;
+  left: 110%;
+}

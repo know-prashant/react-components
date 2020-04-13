@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import SortableItems from "./Components/SortableItems";
+import ImageZoomTest from "./Components/ImageZoom/test";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <div className="abc">
-    <SortableItems />
+    <ImageZoomTest />
   </div>,
   document.getElementById("root")
 );
