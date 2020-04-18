@@ -1,0 +1,24 @@
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f44336;
+  text-align: center;
+  box-shadow: 0 1px 3px #000;
+}
+
+/* The progress container (grey background) */
+.progressContainer {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progressBar {
+  height: 8px;
+  background: #4caf50;
+  width: 0%;
+  transition: width 0.2s linear;
+}
