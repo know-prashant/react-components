@@ -1,12 +1,31 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import TypingEffect from "./Components/TypingEffect";
+import Loader from "./Components/Loader";
 import * as serviceWorker from "./serviceWorker";
+import image from "./loader.gif";
 
 ReactDOM.render(
   <div className="abc">
-    <TypingEffect />
+    {/* With image */}
+    <Loader
+      image={
+        <img
+          src={image}
+          alt="loader"
+          style={{ display: "inline-block", verticalAlign: "middle" }}
+        />
+      }
+      fullScreen={true}
+    />
+
+    {/* default */}
+    <Loader
+      fullScreen={true}
+      width="120px"
+      height="120px"
+      bgColor="rgba(0,0,0,.5)"
+    />
   </div>,
   document.getElementById("root")
 );

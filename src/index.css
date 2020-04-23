@@ -17,8 +17,8 @@ code {
 }
 
 .abc {
-  margin: 100px 0;
+  /* margin: 100px 0;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: center; */
 }
