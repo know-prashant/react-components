@@ -1,31 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Loader from "./Components/Loader";
+import ScrollTop from "./Components/ScrollTop";
 import * as serviceWorker from "./serviceWorker";
-import image from "./loader.gif";
+
+const divs = ["purple", "green", "yellow", "blue"].map(e => (
+  <div key={e} style={{ height: "100vh", backgroundColor: e }}></div>
+));
 
 ReactDOM.render(
   <div className="abc">
-    {/* With image */}
-    <Loader
-      image={
-        <img
-          src={image}
-          alt="loader"
-          style={{ display: "inline-block", verticalAlign: "middle" }}
-        />
-      }
-      fullScreen={true}
-    />
-
-    {/* default */}
-    <Loader
-      fullScreen={true}
-      width="120px"
-      height="120px"
-      bgColor="rgba(0,0,0,.5)"
-    />
+    {divs}
+    <ScrollTop />
   </div>,
   document.getElementById("root")
 );

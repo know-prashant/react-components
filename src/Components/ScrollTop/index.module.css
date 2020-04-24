@@ -1,0 +1,21 @@
+.scroll {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  bottom: 20px;
+  background-color: red;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.left {
+  left: 20px;
+}
+
+.right {
+  right: 20px;
+}
