@@ -1,17 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import ScrollTop from "./Components/ScrollTop";
+import ImageComparisonSlider from "./Components/ImageComparisonSlider";
 import * as serviceWorker from "./serviceWorker";
-
-const divs = ["purple", "green", "yellow", "blue"].map(e => (
-  <div key={e} style={{ height: "100vh", backgroundColor: e }}></div>
-));
 
 ReactDOM.render(
   <div className="abc">
-    {divs}
-    <ScrollTop />
+    <ImageComparisonSlider
+      image1={
+        "https://cdn.pixabay.com/photo/2019/12/30/13/10/lost-places-4729640_1280.jpg"
+      }
+      image2={
+        "https://cdn.pixabay.com/photo/2018/09/16/15/31/boy-3681679_1280.jpg"
+      }
+    />
   </div>,
   document.getElementById("root")
 );
