@@ -1,0 +1,62 @@
+.container {
+  margin-top: 75px;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 70px;
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+.menu > ul {
+  padding: 0;
+  list-style-type: none;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.menu > ul > li {
+  margin: 0 5px;
+}
+
+.menu > ul > li > span {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: red;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+li.active > span {
+  background-color: beige !important;
+}
+
+.section {
+  display: block;
+  font-size: 1.5em;
+  height: 65vh;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}

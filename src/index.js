@@ -1,18 +1,30 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import ImageComparisonSlider from "./Components/ImageComparisonSlider";
+import ScrollSpy from "./Components/ScrollSpy";
 import * as serviceWorker from "./serviceWorker";
+
+const divs = ["Section 1", "Section 2", "Section 3", "Section 4"].map(e => (
+  <div key={e}>
+    <h1>{e}</h1>
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book. It has survived not only five centuries, but
+      also the leap into electronic typesetting, remaining essentially
+      unchanged. It was popularised in the 1960s with the release of Letraset
+      sheets containing Lorem Ipsum passages, and more recently with desktop
+      publishing software like Aldus PageMaker including versions of Lorem Ipsum
+    </p>
+  </div>
+));
 
 ReactDOM.render(
   <div className="abc">
-    <ImageComparisonSlider
-      image1={
-        "https://cdn.pixabay.com/photo/2019/12/30/13/10/lost-places-4729640_1280.jpg"
-      }
-      image2={
-        "https://cdn.pixabay.com/photo/2018/09/16/15/31/boy-3681679_1280.jpg"
-      }
+    <ScrollSpy
+      menus={["Home", "Portfolio", "About", "Contact"]}
+      sections={divs}
     />
   </div>,
   document.getElementById("root")
